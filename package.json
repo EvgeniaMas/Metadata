@@ -1,0 +1,19 @@
+{
+  "name": "Metadata",
+  "description": "File Metadata Microservice",
+  "version": "1.0.0",
+  "author": {
+    "name": "Evgeniia"
+  },
+  "dependencies": {
+    "body-parser": "~1.14.x",
+    "express": "~4.13.x",
+    "filesize": "^3.5.10"
+  },
+  "engines": {
+    "node": "4.2.4"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

@@ -1,0 +1,56 @@
+    html {
+        background: radial-gradient(#ffffff,#2F73B6);
+        background: -ms-radial-gradient(#ffffff, #2F73B6);
+        background: -moz-radial-gradient(#ffffff, #2F73B6);
+        background: -webkit-radial-gradient(#ffffff, #2F73B6);
+        text-align: center;
+        color: #000; 
+        height: 100%;
+        	
+        }
+
+      h1#gradient {
+        color: #FF0052; 
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Helvetica;
+        text-align:center;
+        font-size: 60px;
+        letter-spacing: -4px;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        h1#gradient {
+        background: -webkit-gradient(linear,left top,left bottom,from(#FF0052),to(#802F7B));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    }
+
+       
+
+    p {  font-weight: bold;
+         font-family: Helvetica;
+         font-size: 19px; 
+         line-height: 28px; 
+         margin: 0 0 24px; }
+
+    #result {
+        margin-top: 30px;
+    }
+
+    input#loadfile {
+        padding: 15px;
+        background: -webkit-gradient(linear,left top,left bottom,from(#FF0052),to(#802F7B));
+         color: #fff;
+         font-size: 18px;
+            
+        }
+
+    input[type=button]  {
+        background: -webkit-gradient(linear,left top,left bottom,from(#FF0052),to(#802F7B));
+        padding: 15px;
+        color: #fff;
+        font-size: 18px;
+        }
+
+

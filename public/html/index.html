@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Metadata Microservice</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+    <h1 id ="gradient">File Metadata Microservice</h1>
+    <p>Upload any file to define it's size in bytes.</p>    
+    <div class="col-md-12">
+    <form> 
+    <input type="file" value="Check new file"   id="loadfile" />
+    <input type="button" value="Press to see it's size" onclick="findSize()" />
+    <p id ="result"></p>   
+    </form>      
+    </ul>
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+
+
+    <script type="text/javascript">
+    function findSize() {
+        var fileSize = $("#loadfile")[0];
+        var strJSON = JSON.stringify(fileSize.files[0].size);
+        document.getElementById("result").innerHTML="{filesize :  "+  strJSON + " bytes }" ;
+        
+    }    
+</script>
+    
+</body>
+</html>
